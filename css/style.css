@@ -1,57 +1,153 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
 	text-align: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-color: white;
+	width: 100%;
 }
 
+/* Css Container 1 - Inicio */
 .container_1 {
-	display: inline-grid;
-	margin-top: 50px;
+	padding: 180px 50px 90px 180px;
 	text-align: initial;
-	width: 83em;
+	height: 65vh;
+	background: #207b5d;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #052c14, #207b5d);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left top, #207b5d, #052c14);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 
 .container_1 h1 {
-	font-size: 3.5em;
+	width: fit-content;
+	font-size: 10vh;
+	font-weight: 700;
+	color: #fff;
+
+
 }
 
 .container_1 h3 {
 	margin-top: 10px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid gray;
+	max-width: 60%;
 }
 
 .container_1 h3 {
-	font-size: 1.5em;
-	color: #4c4c4c;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	color: #fff;
 }
 
+.container_1 img {
+	float: right;
+	margin-right: 40px;
+	width: 30%;
+}
+
+#arrow_icon {
+	width: 5%;
+	position: absolute;
+	top: 700px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* css do dropdown - como jogar - inicio */
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	margin-top: 20px;
+	font-size: 20px;
+	width: 30vh;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: #f9f9f9bb;
+	width: 30em;
+	margin-top: 1px;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 3;
+}
+
+.dropdown-content p {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f19d;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+/* css do dropdown - como jogar - fim */
+
+/* Css container 1 - Fim */
+
+/* Container_2 - inicio*/
+.container_2 {
+	background-image: url("../img/background_game.jpg");
+	/* background: #000000; */
+	/* fallback for old browsers */
+	/* background: -webkit-linear-gradient(to left, #000000, #434343); */
+	/* Chrome 10-25, Safari 5.1-6 */
+	/* background: linear-gradient(to left, #000000, #434343); */
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: auto;
+	padding: 80px 10px;
+}
+
+/* Container_2 - fim*/
+
+/* Container_3 - inicio*/
 .container_3 {
-	width: 40%;
-	margin-top: 50px;
-	padding-right: 15px;
-	padding-left: 15px;
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	background-position-x: center;
+	height: auto;
+	padding: 5px;
 }
 
-.container_3 h3 {
-	border-bottom: none;
-}
+/* Container_3 - fim*/
 
-.container_3 ul {
-	margin-left: 30px;
-	font-size: large;
-}
-
-.container_3 ul li {
-	margin-bottom: 5px;
-}
-
+/* Css do card game - inicio*/
 #game {
 	position: relative;
 	width: 1325px;
@@ -59,7 +155,8 @@ body {
 	border: 1px solid #111;
 	border-radius: 10px;
 	margin: 50px auto;
-	background-color: #33343f;
+	background-color: #222;
+	box-shadow: 0px 3px 10px 1px rgba(177, 172, 160, 0.281);
 }
 
 .card {
@@ -135,19 +232,31 @@ body {
 	border-radius: 15px;
 }
 
-/* Container_4 Accordion */
+/* Css do card game - fim*/
+/* Container_4 Accordion - inicio*/
 
 .container_4 {
 	width: 75%;
-	margin: 150px auto;
+	margin: 100px auto 270px auto;
 	text-align: justify;
 }
 
+.title_container_4 {
+	display: inline-flex;
+	line-height: 50px;
+	padding: 10px;
+}
+
 .container_4 h3 {
-	font-size: 1.5em;
+	font-size: 2em;
+	width: fit-content;
 	color: #4c4c4c;
 	text-align: start;
-	margin-bottom: 20px;
+}
+
+.container_4 img {
+	width: 3%;
+	margin-left: 10px;
 }
 
 .accordion {
@@ -208,6 +317,7 @@ body {
 .panel p {
 	margin: 20px auto;
 	font-size: large;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #555;
 }
 
@@ -217,6 +327,7 @@ body {
 	margin-right: 10px;
 }
 
+/* Container_4 Accordion - fim*/
 /* Footer */
 .footer {
 	position: relative;
@@ -224,11 +335,11 @@ body {
 	bottom: 0;
 	width: 100%;
 	padding-top: 20px;
-	background-color: #555;
+	background-color: rgb(37, 35, 35);
 	color: white;
 	text-align: left;
 	font-size: 1rem;
-	}
+}
 
 .footer_container {
 	margin: 0 30px;
@@ -240,7 +351,7 @@ body {
 
 .footer_container p {
 	padding-bottom: 8px;
-	border-bottom:1px solid #3333;
+	border-bottom: 1px solid #3333;
 }
 
 .footer_container a i {
