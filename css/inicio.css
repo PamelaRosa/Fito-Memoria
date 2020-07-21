@@ -1,0 +1,110 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Css Container 1 - Inicio */
+.container-fluid {
+    text-align: initial;
+    height: 100%;
+    position: absolute;
+}
+
+.container-fluid {
+    background: #207b5d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #052c14, #207b5d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left top, #207b5d, #052c14);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-fluid h1 {
+    width: fit-content;
+    margin-left: 40px;
+    font-size: 13vh;
+    font-weight: 700;
+    color: #fff;
+
+
+}
+
+.container-fluid h3 {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    max-width: 90%;
+}
+
+.container-fluid h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.container-fluid img {
+    float: right;
+    width: 30%;
+}
+
+/* css do dropdown - como jogar - inicio */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9bb;
+    width: 30em;
+    margin-top: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.dropdown-menu p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f19d;
+}
+
+/* css do dropdown - como jogar - fim */
+.button-group {
+    position: relative;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    width: 143px;
+    padding: 15px 25px;
+    margin-right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: forestgreen;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow:0 2px  #707070, 0 4px  #505050, 0 6px #4F4F4F , 0 8px #363636;
+}
+
+.button:hover {
+    background-color: #1b5e20;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666, 0 5px rgb(82, 81, 81);
+    transform: translateY(4px);
+}
+    /* Css container 1 - Fim */

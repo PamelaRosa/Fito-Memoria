@@ -7,91 +7,135 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<link rel="icon" type="imagem/png" href="./img/icon-header.png" />
 	<title>Fito Memória</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/grupoV.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class="container_1">
-		<img src="./img/icon-header2.png" alt="Icon Plant">
-		<h1>Fito Memória</h1>
-		<h3>Vamos conferir o seu conhecimento em fitopatologia? Encontre os pares de doença e agente causal.</h3>
-		<div class="dropdown" style="float:left;">
-			<button class="dropbtn">Como Jogar</button>
-			<div class="dropdown-content">
-				<p>
-					►Cada carta tem uma imagem de uma doença ou um patógeno. <br>
-					►Escolha duas cartas para desvirá-las. Caso formem um par, elas são removidas do jogo.
-					Caso contrário, elas voltam a ficar com as imagens voltadas para baixo. <br>
-					►O jogo termina quando todos os pares forem formados.
-				</p>
+	<header>
+		<div class="container-lg" id="nav-container">
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<!-- logo -->
+				<a class="navbar-brand" href="./inicio.html">
+					<img src="img/icon-header2.png" alt="Fito Memoria" style="width:60px;">Fito Memória
+				</a>
+				<div class="navbar-collapse justify-content-end" id="navbar-links">
+					<!-- Links -->
+					<a class="nav-item nav-link " href="./grupoI.html">Grupo I</a>
+					<a class="nav-item nav-link"  href="./grupoII.html">Grupo II</a>
+					<a class="nav-item nav-link"  href="./grupoIII.html">Grupo III</a>
+					<a class="nav-item nav-link"  href="./grupoIV.html">Grupo IV</a>
+					<a class="nav-item nav-link active" href="./grupoV.html">Grupo V</a>
+					<a class="nav-item nav-link"  href="./grupoVI.html">Grupo VI</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="container_2">
+		<div class="row">
+			<div class="col">
+				<h1>Grupo V</h1>
+			</div>
+			<div class="col-5 mt-5">
+				<button type="button" class="button-ref" data-toggle="modal" data-target="#myModal">Referências
+					Utilizadas</button>
 			</div>
 		</div>
-		<img id="arrow_icon" src="./img/arrow-down.png" alt="arrow-down">
-	</div>
-	<div class="container_2">
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Referências
+							Utilizadas</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						Modal body..
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h2>Doenças que interferem com a fotossíntese - Manchas, ferrugens, oídios e míldios </h2>
+			</div>
+		</div>
 		<div id="game">
-			<div class="card" id="card0">
+			<div class="cardGame" id="card0">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card1">
+			<div class="cardGame" id="card1">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card2">
+			<div class="cardGame" id="card2">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card3">
+			<div class="cardGame" id="card3">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card4">
+			<div class="cardGame" id="card4">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card5">
+			<div class="cardGame" id="card5">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card6">
+			<div class="cardGame" id="card6">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card7">
+			<div class="cardGame" id="card7">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card8">
+			<div class="cardGame" id="card8">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card9">
+			<div class="cardGame" id="card9">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card10">
+			<div class="cardGame" id="card10">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card11">
+			<div class="cardGame" id="card11">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card12">
+			<div class="cardGame" id="card12">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card13">
+			<div class="cardGame" id="card13">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card14">
+			<div class="cardGame" id="card14">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
-			<div class="card" id="card15">
+			<div class="cardGame" id="card15">
 				<div class="face back"></div>
 				<div class="face front"></div>
 			</div>
@@ -104,13 +148,13 @@
 	<div class="container_3">
 		<div class="container_4">
 			<div class="title_container_4">
-			<h3>Saiba mais sobre as doenças</h3>
-			<img src="./img/info.svg" alt="info">
+				<h3>Saiba mais sobre as doenças</h3>
+				<img src="./img/info.svg" alt="info">
 			</div>
 			<button class="accordion">Cercosporiose</button>
 			<div class="panel">
 				<h3>Mancha de Cercospora (<i>Cercospora beticola</i>)</h3>
-				<img src="./img/cercosporiose.jpg" alt="cercosporiose">
+				<img src="./img/grupoV/cercosporiose.jpg" alt="cercosporiose">
 
 				<p>Esta doença é muito destrutiva, causando necrose foliar intensa, enfraquecimento das plantas e
 					redução
@@ -168,7 +212,7 @@
 			<button class="accordion">Ferrugem Asiática</button>
 			<div class="panel">
 				<h3>Ferrugem da soja (<i>Phakopsora pachyrhizi</i>)</h3>
-				<img src="./img/ferrugem.jpg" alt="ferrugem asiática">
+				<img src="./img/grupoV/ferrugem.jpg" alt="ferrugem asiática">
 
 				<p>A doença é causada pelo fungo <i>Phakopsora pachyrhizi</i>, sendo, hoje,
 					uma das doenças que mais têm preocupado os produtores de soja. O seu principal dano é a desfolha
@@ -205,7 +249,7 @@
 			<button class="accordion">Ferrugem da Videira</button>
 			<div class="panel">
 				<h3>Ferrugem da Videira (<i>Phakopsora euvitis</i>)</h3>
-				<img src="./img/ferrugemVideira.jpg" alt="Ferrugem da Videira">
+				<img src="./img/grupoV/ferrugemVideira.jpg" alt="Ferrugem da Videira">
 
 				<p>A ferrugem da videira é relatada ocorrendo na Ásia, Japão, Colômbia, Venezuela, América Central,
 					Estados
@@ -238,7 +282,7 @@
 			<button class="accordion">Mancha de Alternaria</button>
 			<div class="panel">
 				<h3>Pinta Preta ou Mancha de Alternaria (<i>Alternaria solani</i>)</h3>
-				<img src="./img/pintaPreta.jpg" alt="Mancha de Alternaria">
+				<img src="./img/grupoV/pintaPreta.jpg" alt="Mancha de Alternaria">
 
 				<p>Esta doença ocorre em todas as regiões onde o tomateiro é cultivado. Sua maior incidência é
 					constatada em
@@ -289,7 +333,7 @@
 			<div class="panel">
 				<h3>Mancha de Mycosphaerella (<i>Mycosphaerella fragariae</i>)</h3>
 				<h5>Anamorfo: <i>Ramularia brunnea</i></h5>
-				<img src="./img/mycosphaerella.jpg" alt="Mancha de Mycosphaerella">
+				<img src="./img/grupoV/mycosphaerella.jpg" alt="Mancha de Mycosphaerella">
 				<p>Está é a doença foliar de ocorrência mais generalizada, sendo encontrada em quase todas as regiões
 					onde
 					se cultiva o morango.
@@ -333,7 +377,7 @@
 				<h3>Mancha Foliar da Gala (<i>Colletotrichum spp.</i>)</h3>
 				<h5>Anamorfo: <i>Colletotrichum spp.</i></h5>
 				<h5>Fase telemórfica: <i>Glomerella cingulata</i></h5>
-				<img src="./img/mfg.jfif" alt="Mancha Foliar de Glomerella">
+				<img src="./img/grupoV/mfg.jpg" alt="Mancha Foliar de Glomerella">
 				<p>A mancha foliar de Glomerella (MFG), também conhecida como mancha da Gala, é considerada a principal
 					doença de
 					verão da macieira no Brasil, embora a doença esteja restrita a poucos países, tais como Brasil,
@@ -421,7 +465,7 @@
 			<button class="accordion">Míldio da Alface</button>
 			<div class="panel">
 				<h3>Míldio da Alface (<i>Bremia lactucae</i>)</h3>
-				<img src="./img/mildio.jpg" alt="Míldio da Alface">
+				<img src="./img/grupoV/mildio.jpg" alt="Míldio da Alface">
 
 				<p>A doença é importante em condições ambientais de alta umidade e temperatura amena a baixa.
 					Na região Sudeste do Brasil, esta doença ocorre nos meses mais frescos do ano quando há cerração e
@@ -452,7 +496,7 @@
 			<div class="panel">
 				<h3>Oídio (<i>Uncinula necator</i>)</h3>
 				<h5>Anamorfo: <i>Oidium tuckeri</i></h5>
-				<img src="./img/oidio.jpg" alt="Oídio ">
+				<img src="./img/grupoV/oidio.jpg" alt="Oídio ">
 				<p>O oídio é uma doença que causa severos prejuízos em países europeus. No Brasil, raramente
 					apresenta-se em
 					alta severidade, em parte devido à alta freqüência de chuvas no período vegetativo da planta,
@@ -544,7 +588,11 @@
 		</div>
 	</div>
 
-	<script src="js/script.js"></script>
+	<script src="js/grupoV.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

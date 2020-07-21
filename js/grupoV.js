@@ -18,11 +18,11 @@
 	for(var i = 0; i < 16; i++){
 		//cria um objeto img com um src e um id
 		var img = {
-			src: "img/" + i + ".jpg",
+			src: "img/grupoV/" + i + ".jpg",
 			id: i%8
 		};
 		
-		//inserer o objeto criado no array
+		//inserir o objeto criado no array
 		images.push(img);
 	}
 	
