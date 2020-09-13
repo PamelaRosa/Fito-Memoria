@@ -45,12 +45,6 @@ header,
 /* Container_2 - inicio*/
 .container_2 {
     background-image: url("../img/background_game.jpg");
-    /* background: #000000; */
-    /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to left, #000000, #434343); */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to left, #000000, #434343); */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
     padding: 80px 10px;
 }
@@ -158,7 +152,7 @@ button:focus {
 }
 
 .back {
-    background: url(../img/Ideia2.jpg);
+    background: url(../img/Ideia1.jpg);
     background-size: 100% 100%;
 }
 

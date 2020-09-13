@@ -121,7 +121,7 @@ button:focus {
 /* Css do card game - inicio*/
 #game {
     position: relative;
-    width: 68%;
+    max-width: 995px;
     height: 495px;
     border: 1px solid #111;
     border-radius: 10px;
@@ -130,10 +130,17 @@ button:focus {
     box-shadow: 0px 3px 10px 1px rgba(177, 172, 160, 0.281);
 }
 
+/* @media only screen and (min-width: 1700px) {
+    #game {
+        max-width: 950px;
+    }
+
+} */
+
 .cardGame {
     width: 160px;
     height: 240px;
-    perspective: 600px;
+    perspective: 400px;
     position: absolute;
     border-radius: 10px;
 }
@@ -158,7 +165,7 @@ button:focus {
 }
 
 .back {
-    background: url(../img/Ideia2.jpg);
+    background: url(../img/Ideia4.jpg);
     background-size: 100% 100%;
 }
 
@@ -230,6 +237,7 @@ button:focus {
 
 .container_4 img {
     width: 3%;
+    height: 3%;
     margin-left: 10px;
 }
 
@@ -301,7 +309,8 @@ button:focus {
     width: 20%;
     margin-right: 10px;
 }
-body > div.container_3 > div > div.panel > h4 > a {
+
+body>div.container_3>div>div.panel>h4>a {
     color: #545454 !important;
     text-decoration-line: none;
 }
