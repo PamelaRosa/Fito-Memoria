@@ -10,4 +10,4 @@ Jogo da memória desenvolvido com javascript para a matéria de Fitopatologia - 
 
 ![image](https://user-images.githubusercontent.com/50418764/85964496-3ee75a80-b990-11ea-89a6-fee43f5ef749.png)
 
-![image](https://user-images.githubusercontent.com/50418764/85964518-4b6bb300-b990-11ea-9f88-9c58c44dd458.png)
+![image](https://user-images.githubusercontent.com/50418764/93026048-6c2fc600-f5d9-11ea-8ea6-f222f444df8d.png)
