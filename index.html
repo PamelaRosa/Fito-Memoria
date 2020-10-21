@@ -8,36 +8,46 @@
     <title>Fito Memória</title>
     <link rel="stylesheet" type="text/css" href="css/inicio.css" />
 
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row pt-5 pl-5">
-            <div class="col-xl-8">
+    <div class="container">
+        <header class="row pt-5">
+            <div class="col-md-8 col-8">
                 <h1>Fito Memória</h1>
                 <h3>Vamos conferir o seu conhecimento em fitopatologia? Encontre os pares de doença e agente causal.
                 </h3>
-                <div class="btn-group dropright">
-                    <button type="button" class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown"
+                <div class="btn-group dropdown">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-display="static" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Como Jogar
                     </button>
-                    <div class="dropdown-menu">
-                        <p>
-                            ►Cada carta tem uma imagem de uma doença ou um patógeno. <br>
-                            ►Escolha duas cartas para desvirá-las. Caso formem um par, elas são removidas do jogo.
-                            Caso contrário, elas voltam a ficar com as imagens voltadas para baixo. <br>
-                            ►O jogo termina quando todos os pares forem formados.
-                        </p>
+                    <div class="dropdown-menu dropdown-menu-sm-left">
+                        <span class="dropdown-item-text ">
+                            <ul>
+                                <li>Cada carta tem uma imagem de uma doença ou um patógeno.</li>
+                                <li>Escolha duas cartas para desvirá-las. Caso formem um par, elas são removidas do
+                                    jogo.
+                                    <br>
+                                    Caso contrário, elas voltam a ficar com as imagens voltadas para baixo.
+                                </li>
+                                <li>O jogo termina quando todos os pares forem formados.</li>
+                            </ul>
+                        </span>
                     </div>
                 </div>
             </div>
-            <img src="./img/icon-header2.png" alt="Icon Plant">
-        </div>
-        <div class="row button-group">
+            <figure class="col-md-4 col-4">
+                <img src="./img/icon-header2.png" class="img-fluid float-right" alt="Icon Plant">
+            </figure>
+        </header>
+        <div class="button-group">
             <a class="button" role="button" href="./grupoI.html">Grupo I</a>
             <a class="button" role="button" href="./grupoII.html">Grupo II</a>
             <a class="button" role="button" href="./grupoIII.html">Grupo III</a>
