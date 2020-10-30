@@ -1,7 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@800&display=swap');
 
-.row {
-    margin: 0!important;
-}
 body {
     background: #207b5d;
     /* fallback for old browsers */
@@ -12,6 +10,10 @@ body {
 
     width: 100vw;
     height: 100vh;
+}
+
+.row {
+    margin: 0!important;
 }
 
 .container h1 {

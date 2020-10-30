@@ -1,29 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/* Navbar */
-.container {
-    padding: 70px 0;
+    font-family: 'Nunito sans Bold', sans-serif;
 }
 
-header,
+/* Navbar */
 .navbar {
     background-color: #1c1c1c;
 }
 
-#nav-container>nav>a {
-    color: #FFF;
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.815);
 }
-
-.nav-brand {
-    padding: 0;
-    color: #FFF;
-}
-
 .navbar-brand:hover {
-    color: #FFF;
+    color: #fff;
+}
+
+.nav-link {
+    display: inline-block!important;
 }
 
 #navbar-links a {
@@ -31,24 +25,34 @@ header,
     font-size: 1.2rem;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .8rem;
-}
-
 /* link ativo */
 #navbar-links>a.nav-item.nav-link.active {
     background-color: transparent;
-    border-bottom: 3px solid forestgreen;
+    color: #FFF;
+    font-size: 20px;
+}
+#navbar-links>a.nav-item.nav-link:hover {
     color: #FFF;
     font-size: 20px;
 }
 
 #navbar-links>a.nav-item.nav-link.active:after {
-    content: none;
+    content: '';
+    background-color: forestgreen;
+    width: 63px;
+    height: 4px;
+    display: block;
+    margin: auto;
 }
+
+body > nav > button > span > i {
+    color: whitesmoke;
+}
+
 
 /* Container_2 - inicio*/
 .container_2 {
+    /* display: none; */
     background-image: url("../img/background_game.jpg");
     height: auto;
     padding: 80px 10px;
@@ -132,7 +136,6 @@ button:focus {
 
 .container_4 h3 {
     font-size: 2em;
-    width: fit-content;
     color: #4c4c4c;
     text-align: start;
 }
@@ -221,74 +224,49 @@ body>div.container_3>div>div.panel>h4>a {
 /* Footer */
 .footer {
     position: relative;
-    left: 0;
     bottom: 0;
+
     width: 100%;
-    padding-top: 20px;
+    padding: 20px 0;
+
     background-color: rgb(37, 35, 35);
     color: white;
-    text-align: left;
-    font-size: 1rem;
 }
 
-.footer_container {
-    margin: 0 30px;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 10px;
+#copyright {
+    position: relative;
+    bottom: 0;
+
+    width: 100%;
+    padding: 10px 0;
 }
 
-.footer_container p {
-    padding-bottom: 8px;
-    border-bottom: 1px solid #3333;
-    margin-bottom: 0;
-}
-.footer_container p, li, h6 {
-    font-family: initial;
-}
-/* Tamanho e margem do link do icone */
-body > div.footer > div > div > div.col-5 > a {
-    width: 40px;
-    margin: auto;
+.img-fluid {
+    max-width: 50%!important;
+    max-height: 50%!important;
 }
 
-.footer_container a i {
-    display: flex;
-    width: 40px;
-    margin: auto;
-    font-size: 45px;
-    color: rgb(216, 213, 213);
-    justify-content: center;
-    align-items: center;
+.footer-logo h3 {
+    font-family: "Nunito", sans-serif;
 }
 
-.footer_container a:hover {
-    color: transparent;
-}
-
-.footer_container a i:hover {
-    color: white;
-}
-
-body > div.footer > div > div.row {
-    width: 60%;
-}
-
-body > div.footer > div > div > div.col-5 {
-    border-right: 3px inset rgba(119, 119, 119, 0.164);
-    padding: 0px 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body > div.footer > div > div > div.col-7 > hr {
-    margin: auto;
-    border-top: 4px ridge rgba(80, 79, 79, 0.322);
-}
-
-body > div.footer > div > div > div.col-7 > div > div:nth-child(1) > ul li {
-    font-size: 16px;
-    margin-left: 20px;
+ul li {
     list-style: none;
+}
+
+#copyright {
+    background-color: rgb(24, 23, 23);
+    color: whitesmoke;
+
+    height: 10vh;
+}
+
+.fa-github {
+    color: #ffffffce; 
+    transition: all .3s;
+}
+
+.fa-github:hover {
+    color: #FFF;
+    transform: scale(1.1);
 }
