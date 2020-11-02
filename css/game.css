@@ -1,8 +1,8 @@
 /* Css do card game - inicio*/
 #game {
     position: relative;
-    width: 62.5rem;
-    height: 31.5rem;
+    width: 42rem;
+    height: 62.5rem;
     border: 1px solid #111;
     border-radius: 0.625em;
     margin: 50px auto;
@@ -96,7 +96,7 @@
 }
 
 .card-subtitle {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .gameOverClass {
@@ -107,11 +107,59 @@
 
 /* POSICIONAMENTO DAS CARTAS */
 
+@media (min-width: 1350px) {
+
+    #game {
+        width: 83em;
+        height: 31em;
+    }
+
+    #card4,
+    #card5,
+    #card6,
+    #card7 {
+        top: 5px !important;
+    }
+
+    #card8,
+    #card9,
+    #card10,
+    #card11,
+    #card12,
+    #card13,
+    #card14,
+    #card15 {
+        top: 250px !important;
+    }
+
+    #card4,
+    #card12 {
+        left: 665px !important;
+
+    }
+
+    #card5,
+    #card13 {
+        left: 830px !important;
+    }
+
+    #card6,
+    #card14 {
+        left: 995px !important;
+    }
+
+    #card7,
+    #card15 {
+        left: 1160px !important;
+    }
+
+}
+
 @media (max-width: 700px) {
     #game {
         position: relative;
         width: 85.5vw;
-        height: 74vh;
+        height: 98vh;
         border: 1px solid #111;
         border-radius: 0.625em;
         margin: 50px auto;
@@ -152,108 +200,39 @@
         top: 49vh !important;
     }
 
-    #card0,
-    #card4,
-    #card8 {
-        left: 1vw !important;
-    }
-
-    #card1,
-    #card5,
-    #card9 {
-        left: 22vw !important;
-    }
-
-    #card2,
-    #card6,
-    #card10 {
-        left: 43vw !important;
-    }
-
-    #card3,
-    #card7,
-    #card11 {
-        left: 64vw !important;
-    }
-
-}
-
-@media (min-width: 600px) and (max-width:1000px) {
-    #game {
-        position: relative;
-        width: 85.5vw;
-        height: 109vh;
-        border: 1px solid #111;
-        border-radius: 0.625em;
-        margin: 50px auto;
-        background-color: #222;
-        box-shadow: 0px 3px 10px 1px rgba(177, 172, 160, 0.281);
-    }
-
-    .cardGame {
-        width: 20vw;
-        height: 34.5vh;
-        perspective: 600px;
-        position: absolute;
-        border-radius: 10px;
-    }
-
-    .card-title {
-        font-size: 2rem;
-    }
-
-    #card0,
-    #card1,
-    #card2,
-    #card3 {
-        top: 1vh !important;
-    }
-
-    #card4,
-    #card5,
-    #card6,
-    #card7 {
-        top: 37vh !important;
-    }
-
-    #card8,
-    #card9,
-    #card10,
-    #card11 {
+    #card12,
+    #card13,
+    #card14,
+    #card15 {
         top: 73vh !important;
     }
 
     #card0,
     #card4,
-    #card8 {
-        left: 1vw !important;
+    #card8,
+    #card12 {
+        left: 1vw;
     }
 
     #card1,
     #card5,
-    #card9 {
+    #card9,
+    #card13 {
         left: 22vw !important;
     }
 
     #card2,
     #card6,
-    #card10 {
+    #card10,
+    #card14 {
         left: 43vw !important;
     }
 
     #card3,
     #card7,
-    #card11 {
+    #card11,
+    #card15 {
         left: 64vw !important;
     }
 
-}
-
-@media (max-width: 410px) {
-    .card-title {
-        font-size: 1.5rem;
-    }
-    .card-subtitle {
-        font-size: 1rem;
-    }
 }
