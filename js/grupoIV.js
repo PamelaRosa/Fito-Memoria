@@ -18,7 +18,7 @@
     for(var i = 0; i < 12; i++){
         //cria um objeto img com um src e um id
         var img = {
-            src: "img/grupoIV/" + i + ".jpg",
+            src: "img/grupoIV/" + i + ".JPG",
             id: i%6
         };
 		
