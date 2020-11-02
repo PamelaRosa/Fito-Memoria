@@ -96,7 +96,7 @@
 }
 
 .card-subtitle {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 .gameOverClass {
@@ -110,7 +110,7 @@
 @media (min-width: 1350px) {
 
     #game {
-        width: 83em;
+        width: 83.3em;
         height: 31em;
     }
 
@@ -134,23 +134,23 @@
 
     #card4,
     #card12 {
-        left: 665px !important;
+        left: 670px !important;
 
     }
 
     #card5,
     #card13 {
-        left: 830px !important;
+        left: 835px !important;
     }
 
     #card6,
     #card14 {
-        left: 995px !important;
+        left: 1000px !important;
     }
 
     #card7,
     #card15 {
-        left: 1160px !important;
+        left: 1165px !important;
     }
 
 }
@@ -235,4 +235,13 @@
         left: 64vw !important;
     }
 
+}
+
+@media (max-width: 320px){
+    .card-title {
+        font-size: 1.3rem;
+    }
+    .card-subtitle {
+        font-size: 0.7rem;
+    }
 }
