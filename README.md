@@ -1,5 +1,6 @@
 # Fito-Memoria
 Jogo da memória desenvolvido com javascript para a matéria de Fitopatologia - UFPR. 
+Acesse em: https://fitomemoria.netlify.app/.
 
 
 
