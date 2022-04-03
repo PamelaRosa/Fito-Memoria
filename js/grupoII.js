@@ -15,11 +15,11 @@
     var matches = 0;
 	
     //estrutura de atribiução das imagens aos card
-    for(var i = 0; i < 16; i++){
+    for(var i = 0; i < 6; i++){
         //cria um objeto img com um src e um id
         var img = {
-            src: "img/grupoII/" + i + ".JPG",
-            id: i%8
+            src: "img/grupoII/" + i + ".jpg",
+            id: i%3
         };
 		
         //inserir o objeto criado no array
@@ -45,7 +45,7 @@
         var frontFaces = document.getElementsByClassName("front");
 		
         //posicionamento das cartas e adição do evento click
-        for(var i = 0; i < 16; i++){
+        for(var i = 0; i < 6; i++){
             //limpa as cartas marcadas
             backFaces[i].classList.remove("match","flipped");
             frontFaces[i].classList.remove("match","flipped");
@@ -53,25 +53,8 @@
             //posiciona as cartas no tabuleiro
             var card = document.querySelector("#card" + i);
 
-            card.style.left = (i < 4) === 0 ? 0.3125 + "em" : 0.3125 + ((i % 8) * 10.4) + "em";
-            card.style.left = (i >= 4 && i < 8 ) === 0 ? 0.3125 + "em" : 0.3125 + ((i % 4) * 10.4) + "em";
-            card.style.left = (i >= 8 && i < 12 ) === 0 ? 0.3125 + "em" : 5 + ((i % 4) * 10.4) + "em";
-            card.style.left = (i >= 12 && i < 16 ) === 0 ? 0.3125 + "em" : 0.3125 + ((i % 4) * 10.4) + "em";
-
-            if(i/4 < 1) {
-                card.style.top = 0.3125 + "em";
-            }
-            else if(i/4 >= 1 && i/4 < 2) {
-                card.style.top = 15.625 + "em";
-            }
-            else if (i/4 >= 2 && i/4 < 3) {
-                card.style.top = 31.25 + "em";
-            }
-            else {
-                card.style.top = 46.875 + "em";
-            }
-            
-			
+            card.style.left = (i % 3) === 0 ? 5 + "px" : 5 + ((i % 3) * 165) + "px";
+            card.style.top = i/3 >= 1 ? 250 + "px" : 5 + "px";
             //adiciona às cartas o evento click chamando a função que vira as cartas
             card.addEventListener("click",flipCard,false);
 			
@@ -130,7 +113,7 @@
                     matches++;
 					
                     //verifica se o contador de acertos chegou a 8
-                    if(matches >= 8){
+                    if(matches >= 3){
                         //caso haja 8 acertos, chama a função que finaliza o jogo
                         gameOver();
                     }

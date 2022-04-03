@@ -1,8 +1,8 @@
 /* Css do card game - inicio*/
 #game {
     position: relative;
-    width: 62.5rem;
-    height: 31.5rem;
+    width: 52rem;
+    height: 31rem;
     border: 1px solid #111;
     border-radius: 0.625em;
     margin: 50px auto;
@@ -35,11 +35,6 @@
 .flipped.front {
     transform: rotateY(0deg);
 
-}
-
-.back {
-    background: url("../img/Ideia1.webp");
-    background-size: 100% 100%;
 }
 
 .flipped.back {
@@ -87,7 +82,7 @@
     background-color: #22222279;
 }
 
-.card-title {
+#gameOver .card-title {
     color: white;
     font-size: 3rem;
     padding: 0;
@@ -103,19 +98,15 @@
     border-radius: 15px;
 }
 
-.gameOverClass {
-    border-radius: 15px;
-}
-
 /* Css do card game - fim*/
 
 /* POSICIONAMENTO DAS CARTAS */
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     #game {
         position: relative;
-        width: 85.5vw;
-        height: 74vh;
+        width: 79vw;
+        height: 47.5vh;
         border: 1px solid #111;
         border-radius: 0.625em;
         margin: 50px auto;
@@ -124,14 +115,14 @@
     }
 
     .cardGame {
-        width: 20vw;
-        height: 23.5vh;
+        width: 15vw;
+        height: 22vh;
         perspective: 600px;
         position: absolute;
         border-radius: 10px;
     }
 
-    #gameOver .card {
+    .card {
         width: 75%;
     }
 
@@ -140,152 +131,54 @@
     }
 
     .card-title,
-    #imgGameOver h4 {
-        font-size: 1.5em;
-    }
-
-    .card-subtitle {
-        font-size: 1.2em;
-    }
-
-
-    #card0,
-    #card1,
-    #card2,
-    #card3 {
-        top: 1vh !important;
-    }
-
-    #card4,
-    #card5,
-    #card6,
-    #card7 {
-        top: 25vh !important;
-    }
-
-    #card8,
-    #card9,
-    #card10,
-    #card11 {
-        top: 49vh !important;
-    }
-
-    #card0,
-    #card4,
-    #card8 {
-        left: 1vw !important;
-    }
-
-    #card1,
-    #card5,
-    #card9 {
-        left: 22vw !important;
-    }
-
-    #card2,
-    #card6,
-    #card10 {
-        left: 43vw !important;
-    }
-
-    #card3,
-    #card7,
-    #card11 {
-        left: 64vw !important;
-    }
-
-}
-
-@media (min-width: 601px) and (max-width:1000px) {
-    #game {
-        position: relative;
-        width: 85.5vw;
-        height: 109vh;
-        border: 1px solid #111;
-        border-radius: 0.625em;
-        margin: 50px auto;
-        background-color: #222;
-        box-shadow: 0px 3px 10px 1px rgba(177, 172, 160, 0.281);
-    }
-
-    .cardGame {
-        width: 20vw;
-        height: 34.5vh;
-        perspective: 600px;
-        position: absolute;
-        border-radius: 10px;
-    }
-
-    #gameOver .card {
-        width: 75%;
-    }
-
-    #gameOver .card-body {
-        padding: 0.25rem;
-    }
-
-    #gameOver .card-title {
-        font-size: 2em;
-    }
-
-    .card-subtitle {
-        font-size: 1.5em;
-    }
-
-
-    #card0,
-    #card1,
-    #card2,
-    #card3 {
-        top: 1vh !important;
-    }
-
-    #card4,
-    #card5,
-    #card6,
-    #card7 {
-        top: 37vh !important;
-    }
-
-    #card8,
-    #card9,
-    #card10,
-    #card11 {
-        top: 73vh !important;
-    }
-
-    #card0,
-    #card4,
-    #card8 {
-        left: 1vw !important;
-    }
-
-    #card1,
-    #card5,
-    #card9 {
-        left: 22vw !important;
-    }
-
-    #card2,
-    #card6,
-    #card10 {
-        left: 43vw !important;
-    }
-
-    #card3,
-    #card7,
-    #card11 {
-        left: 64vw !important;
-    }
-
-}
-
-@media (max-width: 410px) {
-    .card-title {
-        font-size: 1.5rem !important;
-    }
-
-    .card-subtitle {
+    #imgGameOver h4  {
         font-size: 1rem;
     }
+
+    .card-subtitle{
+        font-size: 0.75rem;
+    }
+
+    #card0,
+    #card1,
+    #card2,
+    #card3,
+    #card4 {
+        top: 1vh !important;
+    }
+
+    #card5,
+    #card6,
+    #card7,
+    #card8,
+    #card9 {
+        top: 24vh !important;
+    }
+
+    #card0,
+    #card5 {
+        left: 1vw !important;
+    }
+
+    #card1,
+    #card6 {
+        left: 16.5vw !important;
+    }
+
+    #card2,
+    #card7 {
+        left: 32vw !important;
+    }
+
+    #card3,
+    #card8 {
+        left: 47.5vw !important;
+    }
+
+    #card4,
+    #card9 {
+        left: 63vw !important;
+    }
+
 }
+

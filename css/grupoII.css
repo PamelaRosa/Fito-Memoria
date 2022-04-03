@@ -1,8 +1,8 @@
 /* Css do card game - inicio*/
 #game {
     position: relative;
-    width: 62.5rem;
-    height: 31.5rem;
+    width: 31.3rem;
+    height: 31rem;
     border: 1px solid #111;
     border-radius: 0.625em;
     margin: 50px auto;
@@ -86,21 +86,16 @@
     width: 50%;
     background-color: #22222279;
 }
-
-.card-title {
+#gameOver .card-title {
     color: white;
-    font-size: 3rem;
+    font-size: 2em;
     padding: 0;
     max-width: none;
     font-family: "Nunito", sans-serif;
 }
 
-.card-subtitle {
-    font-size: 1.4rem;
-}
-
-.gameOverClass {
-    border-radius: 15px;
+.card-subtitle, #imgGameOver > h4 {
+    font-size: 1em;
 }
 
 .gameOverClass {
@@ -111,11 +106,11 @@
 
 /* POSICIONAMENTO DAS CARTAS */
 
-@media (max-width: 600px) {
+@media (max-width: 530px) {
     #game {
         position: relative;
-        width: 85.5vw;
-        height: 74vh;
+        width: 64.5vw;
+        height: 47.5vh;
         border: 1px solid #111;
         border-radius: 0.625em;
         margin: 50px auto;
@@ -125,167 +120,49 @@
 
     .cardGame {
         width: 20vw;
-        height: 23.5vh;
+        height: 22vh;
         perspective: 600px;
         position: absolute;
         border-radius: 10px;
     }
 
-    #gameOver .card {
-        width: 75%;
-    }
-
     #gameOver .card-body {
-        padding: 0.25rem;
+        padding: 0.4rem;
     }
 
-    .card-title,
-    #imgGameOver h4 {
-        font-size: 1.5em;
-    }
-
-    .card-subtitle {
-        font-size: 1.2em;
-    }
-
-
-    #card0,
-    #card1,
-    #card2,
-    #card3 {
-        top: 1vh !important;
-    }
-
-    #card4,
-    #card5,
-    #card6,
-    #card7 {
-        top: 25vh !important;
-    }
-
-    #card8,
-    #card9,
-    #card10,
-    #card11 {
-        top: 49vh !important;
-    }
-
-    #card0,
-    #card4,
-    #card8 {
-        left: 1vw !important;
-    }
-
-    #card1,
-    #card5,
-    #card9 {
-        left: 22vw !important;
-    }
-
-    #card2,
-    #card6,
-    #card10 {
-        left: 43vw !important;
-    }
-
-    #card3,
-    #card7,
-    #card11 {
-        left: 64vw !important;
-    }
-
-}
-
-@media (min-width: 601px) and (max-width:1000px) {
-    #game {
-        position: relative;
-        width: 85.5vw;
-        height: 109vh;
-        border: 1px solid #111;
-        border-radius: 0.625em;
-        margin: 50px auto;
-        background-color: #222;
-        box-shadow: 0px 3px 10px 1px rgba(177, 172, 160, 0.281);
-    }
-
-    .cardGame {
-        width: 20vw;
-        height: 34.5vh;
-        perspective: 600px;
-        position: absolute;
-        border-radius: 10px;
-    }
-
-    #gameOver .card {
-        width: 75%;
-    }
-
-    #gameOver .card-body {
-        padding: 0.25rem;
-    }
-
-    #gameOver .card-title {
-        font-size: 2em;
-    }
-
-    .card-subtitle {
-        font-size: 1.5em;
-    }
-
-
-    #card0,
-    #card1,
-    #card2,
-    #card3 {
-        top: 1vh !important;
-    }
-
-    #card4,
-    #card5,
-    #card6,
-    #card7 {
-        top: 37vh !important;
-    }
-
-    #card8,
-    #card9,
-    #card10,
-    #card11 {
-        top: 73vh !important;
-    }
-
-    #card0,
-    #card4,
-    #card8 {
-        left: 1vw !important;
-    }
-
-    #card1,
-    #card5,
-    #card9 {
-        left: 22vw !important;
-    }
-
-    #card2,
-    #card6,
-    #card10 {
-        left: 43vw !important;
-    }
-
-    #card3,
-    #card7,
-    #card11 {
-        left: 64vw !important;
-    }
-
-}
-
-@media (max-width: 410px) {
     .card-title {
-        font-size: 1.5rem !important;
+        font-size: 1em;
     }
 
-    .card-subtitle {
-        font-size: 1rem;
+    .card-subtitle, #imgGameOver h4 {
+        font-size: 0.75em;
     }
+
+    #card0,
+    #card1,
+    #card2 {
+        top: 1vh !important;
+    }
+
+    #card3,
+    #card4,
+    #card5 {
+        top: 24vh !important;
+    }
+
+    #card0,
+    #card3 {
+        left: 1vw !important;
+    }
+
+    #card1,
+    #card4 {
+        left: 22vw !important;
+    }
+
+    #card2,
+    #card5 {
+        left: 43vw !important;
+    }
+
 }

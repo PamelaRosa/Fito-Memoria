@@ -82,17 +82,21 @@
     z-index: -2;
 }
 
-.card {
-    width: 60%;
-    background-color: #222222 !important;
+#gameOver .card {
+    width: 40%;
+    background-color: #22222279;
 }
 
 .card-title {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0;
-    max-width: none !important;
+    max-width: none;
     font-family: "Nunito", sans-serif;
+}
+
+.card-title {
+    font-size: 3rem;
 }
 
 .card-subtitle {
@@ -112,6 +116,10 @@
     #game {
         width: 83.3em;
         height: 31em;
+    }
+
+    .card-title {
+        font-size: 3rem;
     }
 
     #card4,
@@ -175,8 +183,16 @@
         border-radius: 10px;
     }
 
+    #gameOver .card {
+        width: 50%;
+    }
+
     .card-title {
-        font-size: 2rem;
+        font-size: 1.5em;
+    }
+
+    .card-subtitle, #imgGameOver > h4 {
+        font-size: 1em;
     }
 
     #card0,
@@ -237,10 +253,14 @@
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
+    #gameOver .card {
+        width: 60%;
+    }
     .card-title {
         font-size: 1.3rem;
     }
+
     .card-subtitle {
         font-size: 0.7rem;
     }
